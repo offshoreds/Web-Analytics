@@ -2,7 +2,7 @@
 
 - include: "*.view.lookml"       # include all the views
 
-
+- include: "Web_Analytics.dashboard.lookml" 
 
 
 
