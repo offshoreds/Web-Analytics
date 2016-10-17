@@ -46,7 +46,7 @@
   - measure: SESSIONS_m
     type: sum
     label: 'Sessions'
-    value_format: '0'
+    value_format: '#,###'
     sql: ${SESSIONS}
 
   - measure: PERCENT_NEW_SESSIONS_m
@@ -57,7 +57,7 @@
 
   - measure: NEW_USERS_m
     type: sum
-    value_format: '0'
+    value_format: '#,###'
     label: 'New Users'
     sql: ${NEW_USERS}
     
