@@ -70,6 +70,7 @@
   - measure: NEW_SESSIONS_m
     type: sum
     label: 'New Sessions'
+    value_format: '#,##0'
     sql: ${NEW_SESSIONS}*100
 
   - measure: PAGE_VIEWS_m

@@ -9,6 +9,7 @@
 
 - explore: Web_T
 
+- explore: Web_Analytics_Details
 
 
 
