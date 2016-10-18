@@ -8,6 +8,11 @@
     - elements: [Sessions_Per_Channels,Sessions_By_Browser,Sessions_By_Landing_Page]
       height:  330
       
+    - elements: [Web_Detail_Report]
+      height:  330
+      
+      
+      
   elements:
   
   - name: Sessions
@@ -337,7 +342,7 @@
     limit: '500'
     column_limit: '50'
     query_timezone: America/Los_Angeles
-    value_labels: labels
+    value_labels: legend
     label_type: lab
     show_view_names: false
     stacking: ''
@@ -362,7 +367,7 @@
     show_silhouette: false
     totals_color: '#808080'
     series_types: {}
-    inner_radius: 70
+    inner_radius: 50
 
 
   - name: Sessions_By_Landing_Page
@@ -403,6 +408,49 @@
     ordering: none
     show_null_labels: false
     series_types: {}
+    
+  - name: Web_Detail_Report
+    title: 'Detail Report'
+    type: table
+    model: web_analytics
+    explore: Web_Analytics_Details
+    dimensions: [Web_Analytics_Details.W_DATE, Web_Analytics_Details.REGION, Web_Analytics_Details.AVG_SESSION_DURATION]
+    measures: [Web_Analytics_Details.SESSIONS_m, Web_Analytics_Details.PAGES_BY_SESSION_m,
+      Web_Analytics_Details.NEW_USERS_m, Web_Analytics_Details.PERCENT_NEW_SESSIONS_m,
+      Web_Analytics_Details.BOUNCE_RATE_m]
+    sorts: [Web_Analytics_Details.NEW_USERS_m desc]
+    limit: '500'
+    column_limit: '50'
+    query_timezone: America/Los_Angeles
+    show_view_names: false
+    show_row_numbers: false
+    truncate_column_names: false
+    hide_totals: false
+    hide_row_totals: false
+    table_theme: editable
+    limit_displayed_rows: false
+    stacking: ''
+    show_value_labels: false
+    label_density: 25
+    legend_position: center
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    y_axis_combined: true
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    x_axis_scale: auto
+    y_axis_scale_mode: linear
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: '#808080'
+    series_types: {}
+
 
 
 
