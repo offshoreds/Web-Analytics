@@ -2,19 +2,19 @@
   title: Web Analytics
   layout: grid
   rows:
-  
+
     - elements: [Sessions,Users,Page_Views,Pages/Sessions,New_Sessions,Bounce_Rate]
       height:  110
     - elements: [Sessions_Per_Channels,Sessions_By_Browser,Sessions_By_Landing_Page]
       height:  330
-      
+
     - elements: [Web_Detail_Report]
       height:  330
-      
-      
-      
+
+
+
   elements:
-  
+
   - name: Sessions
     type: single_value
     model: web_analytics
@@ -54,7 +54,7 @@
     show_silhouette: false
     totals_color: '#808080'
     series_types: {}
-  
+
   - name: Users
     type: single_value
     model: web_analytics
@@ -94,8 +94,8 @@
     show_silhouette: false
     totals_color: '#808080'
     series_types: {}
-    
-    
+
+
   - name: Page_Views
     type: single_value
     model: web_analytics
@@ -135,7 +135,7 @@
     show_silhouette: false
     totals_color: '#808080'
     series_types: {}
-    
+
   - name: Pages/Sessions
     type: single_value
     model: web_analytics
@@ -176,8 +176,8 @@
     totals_color: '#808080'
     series_types: {}
     value_format: '0.00'
-    
-    
+
+
   - name: New_Sessions
     type: single_value
     model: web_analytics
@@ -218,8 +218,8 @@
     totals_color: '#808080'
     series_types: {}
     value_format: 0.00\%
-    
-    
+
+
   - name: Bounce_Rate
     type: single_value
     model: web_analytics
@@ -260,8 +260,8 @@
     totals_color: '#808080'
     series_types: {}
     value_format: 0\%
-    
-  
+
+
   - name: Sessions_Per_Channels
     type: looker_bar
     model: web_analytics
@@ -329,7 +329,7 @@
     inner_radius: 50
     colors: 'palette: Green to Red'
     series_colors: {}
-    
+
   - name: Sessions_By_Browser
     type: looker_pie
     model: web_analytics
@@ -408,7 +408,7 @@
     ordering: none
     show_null_labels: false
     series_types: {}
-    
+
   - name: Web_Detail_Report
     title: 'Detail Report'
     type: table
@@ -450,9 +450,3 @@
     show_silhouette: false
     totals_color: '#808080'
     series_types: {}
-
-
-
-
-
-
