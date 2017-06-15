@@ -1,5 +1,5 @@
 view: browsers {
-  sql_table_name: LOOKER.BROWSERS ;;
+  sql_table_name: webanalytics.BROWSERS ;;
 
   dimension: browser {
     type: string

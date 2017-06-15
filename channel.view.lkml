@@ -1,5 +1,5 @@
 view: channel {
-  sql_table_name: LOOKER.CHANNEL ;;
+  sql_table_name: webanalytics.CHANNEL ;;
 
   dimension: channel {
     type: string

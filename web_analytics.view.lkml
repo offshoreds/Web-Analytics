@@ -1,5 +1,5 @@
 view: web_analytics {
-  sql_table_name: LOOKER.WEB_ANALYTICS ;;
+  sql_table_name: webanalytics.WEB_ANALYTICS ;;
 
   dimension: pageviews {
     type: string

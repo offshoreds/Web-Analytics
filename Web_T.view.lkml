@@ -1,5 +1,5 @@
 view: Web_T {
-  sql_table_name: LOOKER.WEB_T ;;
+  sql_table_name: webanalytics.WEB_T ;;
 
   dimension: BOUNCE_RATE {
     type: string

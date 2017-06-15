@@ -1,4 +1,4 @@
-connection: "look"
+connection: "webanalytics"
 
 # include all the views
 include: "*.view"

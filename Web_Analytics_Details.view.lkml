@@ -1,5 +1,5 @@
 view: Web_Analytics_Details {
-  sql_table_name: LOOKER.webanalytics_data ;;
+  sql_table_name: webanalytics.webanalytics_data ;;
 
   dimension: W_DATE {
     type: date
